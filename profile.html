@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Firestone Pizzeria</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="wood-bg page-fade">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="logo">FIRESTONE PIZZERIA</div>
+      <div class="nav-links">
+        <a class="nav-link" href="/dashboard">Home</a>
+        <a class="nav-link" href="/order-summary">Order Summary</a>
+        <a class="nav-link" href="/reviews">Reviews</a>
+        <a class="nav-link" href="/about">About Us</a>
+        <a class="nav-link active" href="/profile">Profile</a>
+        <a class="icon-chip" data-profile-initials href="/profile"></a>
+        <a class="icon-chip cart-chip" href="/order-summary">Cart<span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="panel">
+      <h2 style="margin-top:0;">My Profile</h2>
+      <div id="profile-user" class="hint">Loading user information...</div>
+    </section>
+
+    <section class="panel">
+      <h3 style="margin-top:0;">Order Stats</h3>
+      <div id="profile-stats" class="hint">Loading stats...</div>
+    </section>
+
+    <section class="panel">
+      <h3 style="margin-top:0;">Favorite Items</h3>
+      <div id="profile-favorites" class="hint">Loading favorites...</div>
+    </section>
+  </main>
+
+  <script src="/app-common.js"></script>
+  <script src="/profile.js"></script>
+</body>
+</html>
